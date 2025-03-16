@@ -6,16 +6,11 @@ This project sets up an Nginx server with PHP-FPM using Docker. The configuratio
 
 - Docker installed on your machine
 
-## Project Structure
+## Clone the repo
 
-```
-.
-├── Dockerfile
-├── fastcgi-php.conf
-├── index.php
-├── nginx.conf
-├── supervisord.conf
-└── www.conf
+```sh
+git clone https://github.com/konradzawadka/rpi-gpio-sandbox.git
+cd rpi-gpio-sandbox
 ```
 
 ## Configuration Files
