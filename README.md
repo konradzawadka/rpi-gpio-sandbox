@@ -48,12 +48,12 @@ docker build -t czujnik-server .
 To run the Docker container, use the following command:
 
 ```sh
-docker run --device /dev/gpiomem -p 8081:8081 czujnik-server
+docker run --privileged -p 8081:8081 czujnik-server
 ```
 
 ## Accessing the Application
 
-Once the container is running, you can access the application by navigating to `http://localhost:8081` in your web browser.
+Once the container is running, you can access the application by navigating to `http://{IP}:8081` in your web browser.
 
 ## Troubleshooting
 
