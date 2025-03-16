@@ -37,7 +37,7 @@ A simple PHP file to test the setup.
 
 ## Building the Docker Image
 
-To build the Docker image, run the following command:
+(run as root) To build the Docker image, run the following command:
 
 ```sh
 docker build -t czujnik-server .
@@ -45,10 +45,26 @@ docker build -t czujnik-server .
 
 ## Running the Docker Container
 
-To run the Docker container, use the following command:
+(run as root) To run the Docker container, use the following command:
 
 ```sh
-docker run --privileged -p 8081:8081 czujnik-server
+docker run --privileged -p 8081:8081 czujnik-server -n czujnik-server
+```
+
+
+## Checking gpio status
+
+(run as root) Enter to bash
+```sh
+sudo docker exec -it czujnik-server bash
+gpio readall
+```
+
+set gpio 4 to out and then set status
+
+```sh
+gpio mode 4 OUT
+gpio write 4 1
 ```
 
 ## Accessing the Application
