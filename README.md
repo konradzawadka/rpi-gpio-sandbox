@@ -48,7 +48,7 @@ docker build -t czujnik-server .
 (run as root) To run the Docker container, use the following command:
 
 ```sh
-docker run --privileged -p 8081:8081 czujnik-server -n czujnik-server
+docker run --privileged -p 8081:8081 --name czujnik-server czujnik-server 
 ```
 
 
