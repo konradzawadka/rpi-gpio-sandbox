@@ -34,7 +34,7 @@ class GPIOReader {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raspberry Pi GPIO Status</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <meta http-equiv="refresh" content="5">
 </head>
 <body>
